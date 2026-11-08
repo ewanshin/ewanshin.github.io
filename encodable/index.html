@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encodable 지원</title>
+<meta name="description" content="Encodable — 맥에서 영상 용량을 줄이고 자막을 만들어 주는 앱. 지원과 자주 묻는 질문.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="">
+  <div>
+    <h1>Encodable</h1>
+    <p class="tagline">영상 용량을 줄이고, 자막을 만들어 주는 맥 앱</p>
+  </div>
+</header>
+<nav>
+  <a href="#faq">자주 묻는 질문</a>
+  <a href="#contact">문의</a>
+  <a href="privacy/">개인정보 처리방침</a>
+  <a href="#english">English</a>
+</nav>
+
+<p>영상을 끌어다 놓고 "인코딩 시작"만 누르면, 볼 기기에 맞는 크기로 줄이고 말소리를 인식해 번역 자막까지 넣어 줍니다. 모든 처리는 내 맥 안에서 합니다.</p>
+<ul>
+  <li>볼 기기(휴대폰·태블릿·노트북·TV)만 고르면 되는 쉬운 변환, 예상 용량과 시간 표시</li>
+  <li>자막 자동 생성(Whisper 음성 인식)과 Apple 번역, 가지고 있는 자막 파일 자동 연결</li>
+  <li>영상과 소리를 어디에도 올리지 않음, 데이터 수집 없음</li>
+</ul>
+<p>요구 사항: macOS 26 이상 (Apple 실리콘 권장)</p>
+
+<h2 id="faq">자주 묻는 질문</h2>
+
+<h3>원본 옆에 저장하려는데 폴더 허용 창이 떠요.</h3>
+<p>맥 App Store 앱은 이용자가 건네준 파일과 폴더만 쓸 수 있습니다. 창에서 그 폴더가 선택된 상태로 <b>허용</b>을 누르면 다음부터는 묻지 않습니다. 파일 대신 폴더를 통째로 끌어다 놓아도 됩니다.</p>
+
+<h3>자막이 5분에서 끝나요.</h3>
+<p>무료 버전은 자막 인식·번역을 영상마다 앞 5분만 합니다. <b>자막 설정</b> 맨 위에서 구입한 뒤, 목록에서 <b>자막 다시</b>를 누르면 영상 전체 자막으로 바뀝니다. 다른 맥에서는 <b>구입 복원</b>을 누르세요. 인코딩과 가지고 있는 자막 파일 넣기는 무료로도 제한이 없습니다.</p>
+
+<h3>번역 언어 팩이 필요하다고 나와요.</h3>
+<p>자막 설정에서 <b>언어 팩 받기</b>를 누르면 macOS가 Apple 번역 언어 팩을 내려받습니다. 처음 한 번만 필요합니다.</p>
+
+<h3>어떤 음성 인식 모델을 받아야 하나요?</h3>
+<p><code>large-v3-turbo</code>(1.6GB)를 추천합니다. 빠르게 시험해 보려면 <code>base</code>(약 140MB)도 됩니다. 큰 모델일수록 정확하지만 느립니다.</p>
+
+<h3>아이패드에서 자막이 안 보여요.</h3>
+<p>자막은 영상 안의 트랙으로 들어갑니다. 재생할 때 자막 버튼(말풍선)에서 켜세요. 번역 자막이 기본 트랙입니다. <b>.srt 자막 파일도 따로 저장</b>을 켜면 자막 파일도 함께 만듭니다.</p>
+
+<h3>결과 파일 이름이 <code>이름_1.mp4</code>예요.</h3>
+<p>원본을 덮어쓰지 않도록 번호를 붙입니다. 합친 영상은 <code>이름_combi_1.mp4</code>입니다.</p>
+
+<h2 id="contact">문의</h2>
+<div class="card" id="contact-ko">
+  <p>문의 방법은 곧 안내합니다.</p>
+</div>
+
+<p class="lang" id="english">English</p>
+<h2>Encodable Support</h2>
+<p>Drop your videos in and press Start. Encodable shrinks them for the device you'll watch on, recognizes speech, and adds translated subtitles — all on your Mac. Requires macOS 26 or later (Apple silicon recommended).</p>
+
+<h3>A folder access dialog appears when saving next to the original.</h3>
+<p>Mac App Store apps can only use files and folders you give them. Click <b>Allow</b> (허용) with that folder selected and you won't be asked again. You can also drag the whole folder in.</p>
+
+<h3>Subtitles stop at 5 minutes.</h3>
+<p>The free version recognizes and translates the first 5 minutes of each video. After purchasing at the top of Subtitle Settings, press <b>Redo subtitles</b> (자막 다시) in the list to get subtitles for the whole video. On another Mac, press <b>Restore Purchases</b> (구입 복원). Encoding and adding your own subtitle files are unlimited in the free version.</p>
+
+<h3>It says a translation language pack is needed.</h3>
+<p>Click <b>Download language pack</b> (언어 팩 받기) in Subtitle Settings. macOS downloads it from Apple once.</p>
+
+<h3>Which speech recognition model should I download?</h3>
+<p><code>large-v3-turbo</code> (1.6 GB) is recommended. For a quick try, <code>base</code> (about 140 MB) works too.</p>
+
+<h3>I can't see subtitles on my iPad.</h3>
+<p>Subtitles are tracks inside the video. Turn them on with the subtitles button in the player.</p>
+
+<h3>Contact</h3>
+<div class="card" id="contact-en">
+  <p>Contact details coming soon.</p>
+</div>
+
+<footer>
+  <a href="privacy/">개인정보 처리방침 · Privacy Policy</a> · © 2026 Ewan Shin
+</footer>
+</main>
+</body>
+</html>
